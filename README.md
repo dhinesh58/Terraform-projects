@@ -1,9 +1,8 @@
-# Terraform projects using provioner concepts
+# Terraform zero touch automation using provioner concepts
 
 **File Provisioners**
 The file provisioner is used to copy files or directories from the local machine to a remote machine. This is useful for deploying configuration files, scripts, or other assets to a provisioned instance.
 
-```json
 provisioner"file" {
       source = "app.py"
       destination = "/home/ubuntu/app.py"
@@ -17,10 +16,9 @@ provisioner"file" {
 
   In this example, the file provisioner copies the localfile.txt from the local machine to the /path/on/remote/instance/file.txt location on the Azure virtual machines using an SSH connection.
 
- **#  Remote-exec Provisioner**
+ **Remote-exec Provisioner**
  The remote-exec provisioner is used to run scripts or commands on a remote machine over SSH or WinRM connections. It's often used to configure or install software on provisioned instances.
 
- ```json
  provisioner"remote-exec"{
     inline = [
       "echo 'Hello from the remote instance'",
