@@ -1,6 +1,6 @@
 # Terraform projects using provioner concepts
 
-**File Provisioners**
+File Provisioners
 The file provisioner is used to copy files or directories from the local machine to a remote machine. This is useful for deploying configuration files, scripts, or other assets to a provisioned instance.
 
 ```json
