@@ -7,10 +7,6 @@ terraform {
   }
 }
 provider "azurerm" {
-subscription_id = "c775ffb6-5107-45f5-af90-cdb493717cb9"
-  client_id = "e89c3a88-cb86-4f4b-be86-365110b0c907"
-  client_secret = "bgX8Q~M7Rp6zgU18hyZG5H_Kz4ZWuBB8oiER9ct5"
-  tenant_id = "7dd115a1-24e6-4fab-aedb-61ce457289a4"
  features {}
 }
 #Create a resource group if it doesn't exist
